@@ -1,0 +1,100 @@
+.itinerary-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.itinerary-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.metadata {
+    color: #666;
+}
+
+.metadata p {
+    margin: 0.5rem 0;
+}
+
+.recommended-badge {
+    background: #ffd700;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.day-plans {
+    margin-top: 1.5rem;
+}
+
+.day-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.day-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.hotel-details,
+.transfer-details {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.hotel-details {
+    border-left: 4px solid #4CAF50;
+}
+
+.transfer-details {
+    border-left: 4px solid #2196F3;
+}
+
+.activities-list {
+    margin-top: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}

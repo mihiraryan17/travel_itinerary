@@ -27,9 +27,13 @@ def get_itineraries(db: Session = Depends(get_db)):
              )\
              .all()
 
-@router.get("/itineraries", response_model=list[schemas.Itinerary])
-@router.get("/itineraries/", include_in_schema=False)  
-def get_itineraries(db: Session = Depends(get_db)):
+
+@router.get("/recommendations", response_model=list[schemas.Itinerary])
+def get_recommendations(nights: int, db: Session = Depends(get_db)):
     return db.query(models.Itinerary)\
              .options(joinedload(models.Itinerary.days))\
+             .filter(
+                models.Itinerary.nights.between(nights-1, nights+1),  # Flexible range
+                models.Itinerary.is_recommended == True
+             )\
              .all()
